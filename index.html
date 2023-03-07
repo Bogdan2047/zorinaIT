@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+        <div class="header">
+           <div class="img">
+               <img src="./img/logo.png" alt="" />
+           </div>
+           <div class="links">
+               <a href="#charter">Our Charter</a>
+               <a href="#ourplan">Our Plan</a>
+               <a href="#ourmission">Our Mission</a>
+           </div>
+        </div>
+        <div class="charter" id="charter">
+            <div class="block-one">
+                <div class="block-one-img">
+                    <img src="img/Zorina IT Ukraine.png" alt=""/>
+                </div>
+                <div class="block-one-text">
+                    <span>
+                        An organization focused on support for the
+                    </span>
+                    <span>
+                        post-war recovery of IT in Ukraine
+                    </span>
+                </div>
+            </div>
+            <div class="block-one-info">
+                <div class="block-one-info-text">
+                    <div class="title">
+                        Our Charter
+                    </div>
+                    <div class="p">
+                        <p>To become a source of information and a</p> 
+                        <p>place to meet people who are interested</p> 
+                        <p>in helping Ukrainian IT on Day One after</p> 
+                        <p>the war's end.</p>
+                    </div>
+                    <div class="p">
+                        <p>Charter Team members will contribute</p> 
+                        <p>their experience working with the</p>
+                        <p>UA IT industry during the Russian</p> 
+                        <p>Invasion and after.</p>
+                    </div>
+                </div>
+                <div class="block-one-info-img">
+                    <img src="./img/Rectangle 13.png" alt=""/>
+                </div>
+            </div>
+        </div>
+        <div class="plan" id="ourplan">
+            <div class="block-two">
+                    <ul>
+                        <span>Our Plan</span>
+                        <li class="text-li">
+                            <p>Create and publish interviews with</p> 
+                            <p>interesting people willing to share</p> 
+                            <p>heir experience</p>
+                        </li>
+                        <li class="text-li">
+                            <p>Create and share posts, monitor</p> 
+                            <p>activities</p>
+                        </li>
+                        <li class="text-li">
+                            <p>Make available links to other</p> 
+                            <p>published materials that provide </p>
+                            <p>information about UA IT</p>
+                        </li>
+                    </ul>
+            </div>
+        </div>
+        <div class="mission" id="ourmission">
+            <div class="block-tree-text">
+                    <ul>
+                        <span>Our Mission</span>
+
+                        <li>
+                            <p>Recruit SMEs in Verticals</p>                       
+                        </li>
+                        <li>
+                            <p>Publish White Papers, Podcast</p>
+                        </li>
+                        <li>
+                            <p>Establish Regular Meetings and</p>
+                            <p>discuss roadblocks, challenges</p>
+                        </li>
+                        <li>
+                            <p>Find forums to bring positive news</p> 
+                            <p>about UA IT</p> 
+                        </li>
+                    </ul>
+            </div>
+            <div>
+                <img src="./img/Rectangle 15.png" alt=""/>
+            </div>
+            </div>      
+        </div>
+        <div class="footer">
+            <div>
+               <img src="./img/logo.png" alt="" />
+            </div>
+            <div class="links-two">
+                <a href="#charter">Our Charter</a>
+                <a href="#ourplan">Our Plan</a>
+                <a href="#ourmission">Our Mission</a>
+            </div>
+            <div>
+                <span>@<span class="year"></span> all rights reserved</span>
+               
+            </div>
+        </div>
+        <script>
+            const anchors = document.querySelectorAll('a[href*="#"]')
+
+            for (let anchor of anchors){
+                anchor.addEventListener('click', function(event){
+                    event.preventDefault();
+                    const blockID = anchor.getAttribute('href')
+                    document.querySelector('' + blockID).scrollIntoView({
+                        behavior: "smooth",
+                        block: "start"
+                    })
+                })
+            }
+
+            let x = new Date()
+            const year = document.querySelector(".year")
+            year.append(x.getFullYear())
+
+        </script>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;600&display=swap" rel="stylesheet"/>
+</body>
+</html>

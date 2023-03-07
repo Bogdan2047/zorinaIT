@@ -1,0 +1,187 @@
+body {
+  margin: 0 auto;
+  padding: 0 auto;
+  width: 1440px;
+}
+
+.header {
+  margin: 0 auto;
+  background: url("./img/pexels-mathias-reding-11421332-1.png");
+  display: flex;
+  /* border-bottom: 2px #bebebee5 solid; */
+  position: fixed;
+  width: 1440px;
+  filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.2));
+}
+
+.img {
+  padding-top: 21px;
+  padding-left: 135px;
+  padding-bottom: 9px;
+}
+
+.links {
+  padding-top: 38px;
+  padding-left: 43px;
+}
+
+.links a {
+  padding-left: 20px;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.charter {
+  background: url("./img/pexels-mathias-reding-11421332.png");
+  padding-top: 147px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 141px;
+}
+
+.block-one-text {
+  padding-top: 80px;
+  font-size: 48px;
+  display: flex;
+  flex-direction: column;
+  color: #616161;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+  line-height: 100%;
+  text-align: start;
+  padding-left: 135px;
+  letter-spacing: 0.045em;
+}
+
+.block-one-info {
+  padding-top: 226px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.block-one-info-text {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  padding-top: 74px;
+}
+
+.block-one-info-text p {
+  margin: 0 auto;
+}
+
+.plan {
+  background: url(./img/Rectangle_14.png);
+  color: white;
+  max-height: 654px;
+}
+
+.title {
+  font-size: 36px;
+  color: #034673;
+  padding-bottom: 25px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+
+.p {
+  padding-top: 25px;
+  font-size: 24px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.block-two {
+  padding-top: 121px;
+  padding-bottom: 155px;
+  padding-left: 56%;
+}
+
+.block-two ul span {
+  font-size: 36px;
+  padding-bottom: 25px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+
+.block-two ul li p {
+  margin: 0 auto;
+}
+
+.text-li {
+  margin: 0;
+  font-size: 24px;
+  padding-top: 25px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.mission {
+  margin: 0 auto;
+  background: url("./img/pexels-mathias-reding-11421332.png");
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 106px;
+  padding-bottom: 151px;
+}
+
+.block-tree-text {
+  padding-top: 96px;
+  display: flex;
+}
+
+.block-tree-text ul span {
+  font-size: 34px;
+  padding-bottom: 25px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  color: #034673;
+}
+
+.block-tree-text ul li p {
+  margin: 0 auto;
+}
+
+.block-tree-text ul li {
+  padding-top: 25px;
+  font-size: 24px;
+  font-family: "Montserrat", sans-serif;
+  color: #034673;
+}
+
+.block-tree-text ul li p {
+  color: black;
+  font-weight: 400;
+}
+
+.footer {
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  color: white;
+  padding-top: 70px;
+  padding-bottom: 36px;
+}
+
+.links a {
+  text-decoration: none;
+  border: none;
+  color: black;
+}
+
+.links-two {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 30%;
+}
+
+.links-two a {
+  text-decoration: none;
+  border: none;
+  color: white;
+  font-size: 20px;
+}
