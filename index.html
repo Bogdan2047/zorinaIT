@@ -8,16 +8,54 @@
     <title>Document</title>
 </head>
 <body>
-        <div class="header">
+    <div class="menu-burger">
+        <div class="logo-x">
+            <img src="./img/logo.png" alt="" />
+            <span class="cross">&#215;</span>
+        </div>
+        <ul class="links-menu-mob">
+            <li>
+                 <a href="#chartermob" class="our-link-mob">Our Charter</a>
+            </li>
+            <li>
+                 <a href="#ourplan" class="our-link-mob">Our Plan</a>
+            </li>
+            <li> 
+                 <a href="#ourmission" class="our-link-mob">Our Mission</a>
+            </li>
+            <div class="years-mob">
+                <span>
+                    @
+                </span>
+                <span class="year"></span> 
+                <span>
+                    all rights reserved
+                </span>
+            </div>
+    </div>
+        <header class="header">
            <div class="img">
                <img src="./img/logo.png" alt="" />
            </div>
-           <div class="links">
-               <a href="#charter">Our Charter</a>
-               <a href="#ourplan">Our Plan</a>
-               <a href="#ourmission">Our Mission</a>
+           <div class="header-hide">
+               <span></span>
            </div>
-        </div>
+           <nav class="links">
+               <ul class="links-menu">
+                   <li>
+                        <a href="#charter" class="our-link">Our Charter</a>
+                   </li>
+                   <li>
+                        <a href="#ourplan" class="our-link">Our Plan</a>
+                   </li>
+                   <li> 
+                        <a href="#ourmission" class="our-link">Our Mission</a>
+                   </li>
+               </ul>
+               
+               
+           </nav>
+        </header>
         <div class="charter" >
             <div class="block-one">
                 <div class="block-one-img">
@@ -26,15 +64,15 @@
                 <div class="block-one-text">
                     <span>
                         An organization focused on support for the
-                    </span>
-                    <span>
                         post-war recovery of IT in Ukraine
                     </span>
                 </div>
             </div>
             <div class="block-one-info" id="charter">
+                <div id="chartermob"></div>
+
                 <div class="block-one-info-text" >
-                    <div class="title">
+                    <div class="title" >
                         Our Charter
                     </div>
                     <div class="p">
@@ -58,7 +96,7 @@
         </div>
         <div class="plan" >
             <div class="block-two">
-                <span>Our Plan</span>
+                    <span>Our Plan</span>
                     <ul>
                         <li class="text-li">
                             <p>Create and publish interviews with</p> 
@@ -97,13 +135,13 @@
                         </li>
                     </ul>
             </div>
-            <div>
+            <div class="block-tree-img">
                 <img src="./img/Rectangle 15.png" alt=""/>
             </div>
             </div>      
         </div>
-        <div class="footer">
-            <div>
+        <footer class="footer">
+            <div class="footer-img">
                <img src="./img/logo.png" alt="" />
             </div>
             <div class="links-two">
@@ -120,7 +158,7 @@
                     all rights reserved
                 </span>
             </div>
-        </div>
+        </footer>
         <script>
             const anchors = document.querySelectorAll('a[href*="#"]')
 
@@ -135,11 +173,40 @@
                 })
             }
 
+            let burger = document.querySelector('.header-hide');
+            let menu = document.querySelector('.menu-burger')
+            let linksMob = document.querySelectorAll('.our-link-mob')
+            let cross = document.querySelector('.cross')
+
+
+            function menuHandler (event) {
+                menu.style.display = 'block'
+            }
+
+            burger.addEventListener('click', menuHandler)
+
+
+            function hideBurger (){
+                menu.style.display = 'none';
+            }
+
+            linksMob.forEach(a=>a.addEventListener('click', hideBurger))
+
+            function crossHandler (){
+                menu.style.display = 'none';
+            }
+
+            cross.addEventListener('click', crossHandler)
+
             let x = new Date()
-            const year = document.querySelector(".year")
-            year.append(x.getFullYear())
+            const year = document.querySelectorAll(".year")
+            year.forEach(b=>b.append(x.getFullYear()))
 
         </script>
+        <script
+            src="https://code.jquery.com/jquery-3.6.4.js"
+            integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E="
+            crossorigin="anonymous"></script>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;600&display=swap" rel="stylesheet"/>
 </body>
 </html>
