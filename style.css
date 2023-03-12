@@ -328,6 +328,7 @@ body {
   }
 
   .img img {
+    height: 40px;
     width: 40px;
     z-index: 5;
   }
@@ -345,7 +346,7 @@ body {
     position: relative;
     width: 30px;
     height: 40px;
-    padding-top: 20px;
+    padding-top: 26px;
     margin-right: 15px;
   }
   .header-hide span {
@@ -354,7 +355,7 @@ body {
     position: absolute;
     width: 100%;
     height: 5px;
-    top: 38px;
+    top: 44px;
     right: 6px;
     z-index: 4;
     border-radius: 3px;
@@ -389,10 +390,6 @@ body {
     background-position: bottom;
     background-position: top;
     background-repeat: no-repeat;
-  }
-
-  .before {
-    content: "";
   }
 
   .charter {
@@ -549,7 +546,7 @@ body {
   }
 
   .years-mob {
-    padding-top: 300px;
+    padding-top: 370px;
     font-family: "Montserrat", sans-serif;
   }
 
@@ -568,7 +565,7 @@ body {
   }
 
   .logo-x span {
-    padding-top: 10px;
+    padding-top: 15px;
     font-size: 40px;
     color: #67a8c6;
   }

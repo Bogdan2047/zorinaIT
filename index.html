@@ -180,7 +180,8 @@
 
 
             function menuHandler (event) {
-                menu.style.display = 'block'
+                menu.style.display = 'block';
+                document.body.style.overflow = 'hidden';
             }
 
             burger.addEventListener('click', menuHandler)
@@ -188,12 +189,14 @@
 
             function hideBurger (){
                 menu.style.display = 'none';
+                document.body.style.overflow = 'scroll';
             }
 
             linksMob.forEach(a=>a.addEventListener('click', hideBurger))
 
             function crossHandler (){
                 menu.style.display = 'none';
+                document.body.style.overflow = 'scroll';
             }
 
             cross.addEventListener('click', crossHandler)
@@ -201,6 +204,7 @@
             let x = new Date()
             const year = document.querySelectorAll(".year")
             year.forEach(b=>b.append(x.getFullYear()))
+
 
         </script>
         <script
